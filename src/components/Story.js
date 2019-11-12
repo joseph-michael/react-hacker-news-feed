@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { getStory } from '../services/hnApi'
 import { StoryWrapper, StoryTitle, StoryMeta, StoryMetaElement} from '../styles/StoryStyles'
-
+import { mapTime } from '../mappers/mapTime'
 
 export const Story = ({storyId}) => {
     const [story, setStory] = useState([{}])
@@ -25,7 +25,7 @@ export const Story = ({storyId}) => {
         <span className="story__time">
           <StoryMetaElement className="story__time" color="#000">
            Posted:</StoryMetaElement> 
-          story.time
+          {mapTime(story.time)}
         </span>
       </StoryMeta>
     </StoryWrapper>

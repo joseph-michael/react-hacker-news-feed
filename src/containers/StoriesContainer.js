@@ -15,9 +15,12 @@ export const StoriesContainer = () => {
   }, []);
 
   return(
-    <StoriesContainerWrapper>
-      <h1>Hacker News Stories</h1>
-      {storyIds.map( storyId => <Story key={storyId} storyId={storyId} />)}
-    </StoriesContainerWrapper>
+    <>
+      <GlobalStyle/>
+      <StoriesContainerWrapper>
+        <h1>Hacker News Stories</h1>
+        {storyIds.map( storyId => <Story key={storyId} storyId={storyId} />)}
+      </StoriesContainerWrapper>
+      </>
   )
 }
