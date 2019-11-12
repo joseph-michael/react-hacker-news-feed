@@ -5,7 +5,6 @@ export const baseUrl = "https://hacker-news.firebaseio.com/";
 export const newStoriesUrl = `${baseUrl}v0/newstories.json`;
 export const storyUrl = `${baseUrl}v0/item/`;
 
-
 export const getStory = async (storyId) => {
     const result = await axios
         .get(`${storyUrl + storyId}.json`)
