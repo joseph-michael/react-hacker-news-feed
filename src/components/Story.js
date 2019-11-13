@@ -3,7 +3,7 @@ import { getStory } from '../services/hnApi'
 import { StoryWrapper, StoryTitle, StoryMeta, StoryMetaElement} from '../styles/StoryStyles'
 import { mapTime } from '../mappers/mapTime'
 
-export const Story = ({storyId}) => {
+export const Story = ({storyId, index}) => {
     const [story, setStory] = useState([{}])
 
     useEffect( () => {
@@ -14,18 +14,18 @@ export const Story = ({storyId}) => {
     <StoryWrapper>
       <StoryTitle>
         <a href={story.url}>
-          {story.title}
+         {`${index}.`} {story.title}
         </a>
       </StoryTitle>
       <StoryMeta>
         <span className="story__by">
-          <StoryMetaElement color="#000">By:</StoryMetaElement>
+          <StoryMetaElement color="#000">By: </StoryMetaElement>
           {story.by}
         </span>
         <span className="story__time">
           <StoryMetaElement className="story__time" color="#000">
            Posted:</StoryMetaElement> 
-          {mapTime(story.time)}
+          {` ${mapTime(story.time)}`}
         </span>
       </StoryMeta>
     </StoryWrapper>
