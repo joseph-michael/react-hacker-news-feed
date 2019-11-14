@@ -19,11 +19,11 @@ export const Story = ({storyId, index}) => {
       </StoryTitle>
       <StoryMeta>
         <span className="story__by">
-          <StoryMetaElement color="#000">By: </StoryMetaElement>
+          <StoryMetaElement color="#828282">By: </StoryMetaElement>
           {story.by}
         </span>
         <span className="story__time">
-          <StoryMetaElement className="story__time" color="#000">
+          <StoryMetaElement className="story__time" color="#828282">
            Posted:</StoryMetaElement> 
           {` ${mapTime(story.time)}`}
         </span>

@@ -34,7 +34,7 @@ export const StoryTitle = styled.h3`
 
 export const StoryMeta = styled.div`
     font-style: italic;
-
+    color: #828282;
     >span:first-child{
         margin-right:10px;
     }
@@ -43,11 +43,11 @@ export const StoryMeta = styled.div`
         margin: 0 7px;
     }
     .story__meta-bold {
+        color: #828282;
         font-weight: bold;
     }
 `
 
 export const StoryMetaElement = styled.span`
-    font-weight: bold;
     color: ${props => props.color || 'red'};
 `
