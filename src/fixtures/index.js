@@ -1,11 +1,11 @@
 export const singularStory = {
-    by: 'Karl Hadwn',
+    by: 'Karl Hadwen',
     id: 1,
     time: 1567209822,
-    title:'Tarnished: Google Responds',
-    url: 'http://test.com/hackernews',
-}
-
+    title: 'Tarnished: Google Responds',
+    url: 'https://something.com/hackernewstut',
+  };
+  
 export const storyIds = [1];
 
 export const emptySingularStory = {
@@ -14,4 +14,4 @@ export const emptySingularStory = {
     time: undefined,
     title: undefined,
     url: undefined,
-}
+};

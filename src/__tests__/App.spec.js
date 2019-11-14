@@ -25,7 +25,7 @@ test('renders the application', async () => {
   const { getByText, queryByTestId } = render(<App />);
   await waitForElement(() => [
     expect(getByText('Hacker News Stories')).toBeTruthy(),
-    expect(getByText('Tarnished: Google Responds')).toBeTruthy(),
+    expect(getByText('1. Tarnished: Google Responds')).toBeTruthy(),
     expect(queryByTestId('story-by').textContent).toEqual('By: Karl Hadwen'),
   ]);
 });
