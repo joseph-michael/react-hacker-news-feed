@@ -28,4 +28,16 @@ export const StoriesContainerWrapper = styled.main`
   max-width: 1140px;
   padding: 20px 15px;
   margin: auto;
+
+  .posts {
+    background: #ebebeb;
+    padding: .5em;
+  }
+
+  h1 {
+    background-color: rgb(255, 102, 0);
+    font-size: 1.5em;
+    padding: 1em;
+    margin-bottom: 0;
+  }
 `;

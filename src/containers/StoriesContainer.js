@@ -18,10 +18,11 @@ export const StoriesContainer = () => {
   return (
     <>
       <GlobalStyle />
-      <StoriesContainerWrapper data-test-id="stories-container">
+      <StoriesContainerWrapper>
         <h1>Hacker News Stories</h1>
-        {console.log(count)}
-        {storyIds.slice(0, count).map( (storyId, index) => <Story key={storyId} storyId={storyId} index={index + 1} /> )}
+        <section className="posts">
+          {storyIds.slice(0, count).map((storyId, index) => <Story key={storyId} storyId={storyId} index={index + 1}/> )}
+        </section>
       </StoriesContainerWrapper>
     </>
   );

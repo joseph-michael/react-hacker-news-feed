@@ -16,10 +16,11 @@ export const StoryWrapper = styled.section`
     }
 `
 
-export const StoryTitle = styled.h1`
+export const StoryTitle = styled.h3`
 
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 1em;
+    font-weight: normal;
     line-height: 1.8;
     margin:0;
     text-decoration: none;
