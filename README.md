@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 A news reader app using the Hacker news API
 
-![app screenshot](https://raw.githubusercontent.comjoseph-michael/react-hacker-news-feed/blob/master/public/newsreader.png)
+![app screenshot](https://raw.githubusercontent.com/joseph-michael/react-hacker-news-feed/master/public/newsreader.png)
 
 ## Available Scripts
 
