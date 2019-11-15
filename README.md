@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 A news reader app using the Hacker news API
 
+[I'm an inline-style link](https://master.d3tvpmonpm6kc5.amplifyapp.com)
+
 ![app screenshot](https://raw.githubusercontent.com/joseph-michael/react-hacker-news-feed/master/public/newsreader.png)
 
 ## Available Scripts
